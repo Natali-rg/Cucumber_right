@@ -18,6 +18,7 @@ import java.util.Random;
 public class MainPageSteps extends BaseCucumber {
     static MainPage mainPage=null;
     static final String mainURL="https://dnipro.ithillel.ua/";
+
     @When("^I open site \"([^\"]*)\"$")
     public void iOpenSite(String siteURL) throws Throwable {
         driver.get(siteURL);

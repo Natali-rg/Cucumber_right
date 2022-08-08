@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         features = "src/main/java/cucumber/features",
         glue = "cucumber.steps",
-        tags = "@MainPageFeature",
+        tags = "@TestCertificate",
         dryRun = false,
         strict = false,
         snippets = SnippetType.UNDERSCORE)

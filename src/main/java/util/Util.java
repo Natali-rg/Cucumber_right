@@ -15,6 +15,11 @@ public class Util {
         webDriverWait.until(ExpectedConditions.visibilityOf(element));
     }
 
+    public static void waitVisibilityOfElement(WebDriver driver, WebElement element, int seconds){//ожидание загрузки эдементов
+        WebDriverWait webDriverWait=new WebDriverWait(driver, Duration.ofSeconds(seconds));
+        webDriverWait.until(ExpectedConditions.visibilityOf(element));
+    }
+
     public static void scrollToElementVisibilityOf(WebDriver d, By by){//метод который скролит до элемента
         JavascriptExecutor js=(JavascriptExecutor) d;
         boolean bool=false;
