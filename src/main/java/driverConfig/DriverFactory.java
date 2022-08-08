@@ -11,7 +11,7 @@ public class DriverFactory {
     public static WebDriver getDriver(BROWSER brows) {
         WebDriver driver=null;
         BROWSER browser=brows;
-        switch (browser) {
+        switch (brows) {
             case CHROME:
                 driver = initChrome();
                 break;
