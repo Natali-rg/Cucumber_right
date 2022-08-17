@@ -20,8 +20,8 @@ public class AppiumDriverConfig {
         caps.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 1800);
         try {
             driver = new RemoteWebDriver(new URL("http://127.0.0.1:4724/wd/hub"), caps);
-            /*driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
-            driver.manage().timeouts().pageLoadTimeout(60,TimeUnit.SECONDS);*/
+            driver.manage().timeouts().implicitlyWait(10,TimeUnit.SECONDS);
+            driver.manage().timeouts().pageLoadTimeout(60,TimeUnit.SECONDS);
 
         } catch (Exception e) {
             e.printStackTrace();
