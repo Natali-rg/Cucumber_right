@@ -5,7 +5,7 @@ import driverConfig.DriverFactory;
 import org.openqa.selenium.WebDriver;
 
 public class BaseCucumber {
-    protected static WebDriver driver= DriverFactory.getDriver(BROWSER.CHROME);
+    public static WebDriver driver= DriverFactory.getDriver(BROWSER.CHROME);
 
 
 }
